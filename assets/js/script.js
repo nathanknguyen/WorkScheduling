@@ -35,4 +35,7 @@ function displayDay() {
     $("#currentDay").text(moment().format("dddd, MMMM Do"));
 }
 setInterval(displayDay, 1000);
+
+// grab current hour from moment in 24 hour format, so 1pm will be 13 and so forth
+var currentHour = moment().format("H");
   
