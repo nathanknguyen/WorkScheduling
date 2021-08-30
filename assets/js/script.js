@@ -29,3 +29,10 @@ var save4El = document.querySelector("#save4");
 var row5El = document.querySelector("#row5");
 var plan5El = document.querySelector("#plan5")
 var save5El = document.querySelector("#save5");
+
+// function to display the current day and time and set interval  to check every second
+function displayDay() {
+    $("#currentDay").text(moment().format("dddd, MMMM Do"));
+}
+setInterval(displayDay, 1000);
+  
