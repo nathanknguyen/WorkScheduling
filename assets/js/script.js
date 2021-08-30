@@ -38,4 +38,14 @@ setInterval(displayDay, 1000);
 
 // grab current hour from moment in 24 hour format, so 1pm will be 13 and so forth
 var currentHour = moment().format("H");
+
+// determine if hour has passed to display correct color in each block
+if (9 < currentHour) {
+    row9EL.classList = "past";
+  } else if (9 == currentHour) {
+    row9EL.classList = "present";
+  } else {
+    row9EL.classList = "future";
+  }
+
   
