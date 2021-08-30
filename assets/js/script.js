@@ -104,6 +104,36 @@ if (17 < currentHour) {
     row5El.classList = "future";
 }
 
+// grab data from local storage if there is any
+
+if (plan9El !== null) {
+    plan9El.value = localStorage.getItem("plan9AM");
+}
+if (plan10El !== null) {
+    plan10El.value = localStorage.getItem("plan10AM");
+}
+if (plan11El !== null) {
+    plan11El.value = localStorage.getItem("plan11AM");
+}
+if (plan12El !== null) {
+    plan12El.value = localStorage.getItem("plan12PM");
+}
+if (plan1El !== null) {
+    plan1El.value = localStorage.getItem("plan1PM");
+}
+if (plan2El !== null) {
+    plan2El.value = localStorage.getItem("plan2PM");
+}
+if (plan3El !== null) {
+    plan3El.value = localStorage.getItem("plan3PM");
+}
+if (plan4El !== null) {
+    plan4El.value = localStorage.getItem("plan4PM");
+}
+if (plan5El !== null) {
+    plan5El.value = localStorage.getItem("plan5PM");
+}
+
 // Save item in local storage
 function showResponse9(event) {
     // Prevent default action
@@ -159,9 +189,13 @@ function showResponse17(event) {
     localStorage.setItem("plan5pm", plan5El.value);
 }
 
-
-
-
-
-
-  
+// Event listeners!
+save9El.addEventListener("click", showResponse9);
+save10El.addEventListener("click", showResponse10);
+save11El.addEventListener("click", showResponse11);
+save12El.addEventListener("click", showResponse12);
+save1El.addEventListener("click", showResponse13);
+save2El.addEventListener("click", showResponse14);
+save3El.addEventListener("click", showResponse15);
+save4El.addEventListener("click", showResponse16);
+save5El.addEventListener("click", showResponse17);
