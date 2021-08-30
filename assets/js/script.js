@@ -41,11 +41,127 @@ var currentHour = moment().format("H");
 
 // determine if hour has passed to display correct color in each block
 if (9 < currentHour) {
-    row9EL.classList = "past";
-  } else if (9 == currentHour) {
-    row9EL.classList = "present";
-  } else {
-    row9EL.classList = "future";
-  }
+    row9El.classList = "past";
+} else if (9 == currentHour) {
+    row9El.classList = "present";
+} else {
+    row9El.classList = "future";
+}
+if (10 < currentHour) {
+    row10El.classList = "past";
+} else if (10 == currentHour) {
+    row10El.classList = "present";
+} else {
+    row10El.classList = "future";
+}
+if (11 < currentHour) {
+    row11El.classList = "past";
+} else if (11 == currentHour) {
+    row11El.classList = "present";
+} else {
+    row11El.classList = "future";
+}
+if (12 < currentHour) {
+    row11El.classList = "past";
+} else if (12 == currentHour) {
+    row11El.classList = "present";
+} else {
+    row12El.classList = "future";
+}
+if (13 < currentHour) {
+    row1El.classList = "past";
+} else if (13 == currentHour) {
+    row1El.classList = "present";
+} else {
+    row1El.classList = "future";
+}
+if (14 < currentHour) {
+    row2El.classList = "past";
+} else if (14 == currentHour) {
+    row2El.classList = "present";
+} else {
+    row2El.classList = "future";
+}
+if (15 < currentHour) {
+    row3El.classList = "past";
+} else if (15 == currentHour) {
+    row3El.classList = "present";
+} else {
+    row3El.classList = "future";
+}
+if (16 < currentHour) {
+    row4El.classList = "past";
+} else if (16 == currentHour) {
+    row4El.classList = "present";
+} else {
+    row4El.classList = "future";
+}
+if (17 < currentHour) {
+    row11El.classList = "past";
+} else if (17 == currentHour) {
+    row5El.classList = "present";
+} else {
+    row5El.classList = "future";
+}
+
+// Save item in local storage
+function showResponse9(event) {
+    // Prevent default action
+    event.preventDefault();
+    localStorage.setItem("plan9AM", plan9El.value);
+}
+
+function showResponse10(event) {
+    // Prevent default action
+    event.preventDefault();
+    localStorage.setItem("plan10AM", plan10El.value);
+}
+
+function showResponse11(event) {
+    // Prevent default action
+    event.preventDefault();
+    localStorage.setItem("plan11AM", plan11El.value);
+}
+
+function showResponse12(event) {
+    // Prevent default action
+    event.preventDefault();
+    localStorage.setItem("plan12pm", plan12El.value);
+}
+
+function showResponse13(event) {
+    // Prevent default action
+    event.preventDefault();
+    localStorage.setItem("plan1pm", plan1El.value);
+}
+
+function showResponse14(event) {
+    // Prevent default action
+    event.preventDefault();
+    localStorage.setItem("plan2pm", plan2El.value);
+}
+
+function showResponse15(event) {
+    // Prevent default action
+    event.preventDefault();
+    localStorage.setItem("plan3pm", plan3El.value);
+}
+
+function showResponse16(event) {
+    // Prevent default action
+    event.preventDefault();
+    localStorage.setItem("plan4pm", plan4El.value);
+}
+
+function showResponse17(event) {
+    // Prevent default action
+    event.preventDefault();
+    localStorage.setItem("plan5pm", plan5El.value);
+}
+
+
+
+
+
 
   
